@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portafolio personal de Claudio Rafael: creatividad, tecnología, fotografía y producto." data-i18n-content="meta.description">
+  <meta name="theme-color" content="#050817">
+  <title data-i18n="meta.title">Claudiozer | Portafolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Claudiozer, inicio" data-i18n-aria="brand.home">
+      <img src="assets/avatar-retina.webp" alt="" width="48" height="48">
+      <span>Claudio<span>zer</span></span>
+    </a>
+
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav">
+      <span></span><span></span><span></span>
+      <span class="sr-only" data-i18n="nav.open">Abrir menú</span>
+    </button>
+
+    <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
+      <a href="#inicio" data-i18n="nav.home">Inicio</a>
+      <a class="active" href="#sobre-mi" data-i18n="nav.about">Sobre mí</a>
+      <a href="#intereses" data-i18n="nav.interests">Lo que me mueve</a>
+      <a href="#proyectos" data-i18n="nav.projects">Proyectos</a>
+      <a href="#galeria" data-i18n="nav.gallery">Galería</a>
+    </nav>
+    <div class="header-tools">
+      <label class="sr-only" for="language" data-i18n="language.label">Idioma</label>
+      <select id="language" class="language-select" aria-label="Idioma" data-i18n-aria="language.label">
+        <option value="es">ES</option>
+        <option value="en">EN</option>
+        <option value="pt">PT</option>
+      </select>
+      <span class="moon" aria-hidden="true">◔</span>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero section-shell">
+      <div id="sobre-mi" class="hero-copy">
+        <p class="hello" data-i18n="hero.hello">¡Hola! Soy</p>
+        <h1><span>Claudio</span> Rafael Rafael</h1>
+        <p class="lead"><strong data-i18n="hero.lead">creativo, curioso y en constante evolución.</strong></p>
+        <p data-i18n="hero.body">Apasionado por la creatividad, la fotografía y la tecnología. Creo stickers animados que transmiten emociones, capturo momentos que cuentan historias y trabajo en soluciones que mejoran procesos y conectan personas.</p>
+        <p data-i18n="hero.life">Vivo aprendiendo, creando y disfrutando cada día con propósito.</p>
+        <blockquote data-i18n="hero.quote">Creo, capturo y conecto para dejar huella.</blockquote>
+      </div>
+
+      <div class="hero-portrait">
+        <span class="orbit orbit-one"></span>
+        <span class="orbit orbit-two"></span>
+        <img src="assets/hero-retina.webp" alt="Retrato ilustrado de Claudio Rafael" data-i18n-alt="hero.imageAlt">
+      </div>
+
+      <aside class="profile-card">
+        <h2 data-i18n="profile.title">Perfil</h2>
+        <ul>
+          <li><span>♫</span> <span class="profile-value" data-i18n="profile.nationality">Argentino</span> <b>🇦🇷</b></li>
+          <li><span>◷</span> <span class="profile-value" data-i18n="profile.age">40 años</span></li>
+          <li><span>▥</span> 178 cm</li>
+          <li><span>▣</span> 74 kg</li>
+          <li><span>8</span> CrossFit <b>8</b></li>
+        </ul>
+        <div class="profile-focus">
+          <strong data-i18n="profile.focusLabel">Enfocado en:</strong>
+          <p data-i18n="profile.focus">Creatividad, tecnología y soluciones que conectan.</p>
+        </div>
+        <img src="assets/profile-kid-retina.webp" alt="" aria-hidden="true">
+      </aside>
+    </section>
+
+    <section class="essence section-shell" aria-labelledby="essence-title">
+      <h2 id="essence-title" data-i18n="essence.title">Mi esencia</h2>
+      <div class="essence-list">
+        <article><i>◎</i><div><h3 data-i18n="essence.focused">Enfocado</h3><p data-i18n="essence.focusedText">Dirijo mi energía a lo que importa.</p></div></article>
+        <article><i>♧</i><div><h3 data-i18n="essence.creative">Creativo</h3><p data-i18n="essence.creativeText">Transformo ideas en experiencias.</p></div></article>
+        <article><i>↔</i><div><h3 data-i18n="essence.disciplined">Disciplinado</h3><p data-i18n="essence.disciplinedText">La constancia construye libertad.</p></div></article>
+        <article><i>♢</i><div><h3 data-i18n="essence.calm">Tranquilo</h3><p data-i18n="essence.calmText">Mente serena, mejores decisiones.</p></div></article>
+      </div>
+    </section>
+
+    <section id="intereses" class="cards section-shell" aria-label="Intereses y experiencia">
+      <article class="feature-card with-art">
+        <div><h2><span>☆</span> <span data-i18n="cards.motivation">Motivación</span></h2><p data-i18n="cards.motivationText">La disciplina me da estructura, la libertad me da propósito. Entreno mi cuerpo para liberar mi mente.</p><span class="heart">♡</span></div>
+        <img src="assets/motivation-retina.webp" alt="Ilustración entrenando con pesa rusa">
+      </article>
+
+      <article class="feature-card with-art">
+        <div><h2><span>♫</span> <span data-i18n="cards.moves">Lo que me mueve</span></h2>
+          <ul class="compact-list"><li>♫ <span data-i18n="cards.music">Música</span></li><li>▣ <span data-i18n="cards.photoVideo">Fotografía y video</span></li><li>▤ Anime y manga</li><li>◉ <span data-i18n="cards.technology">Tecnología</span></li><li>⌁ <span data-i18n="cards.travel">Viajar</span></li><li>♨ <span data-i18n="cards.coffee">Café</span></li></ul>
+        </div>
+        <img src="assets/camera-kid-retina.webp" alt="Ilustración con cámara y auriculares">
+      </article>
+
+      <article id="proyectos" class="feature-card">
+        <h2><span>▣</span> Product Owner</h2>
+        <p data-i18n="cards.poText">Lidero la visión del producto, conecto equipos y entrego valor real a las personas.</p>
+        <div class="tags"><span data-i18n="cards.productManagement">Gestión de Producto</span><span data-i18n="cards.analysis">Análisis</span><span data-i18n="cards.agility">Agilidad</span><span data-i18n="cards.leadership">Liderazgo</span></div>
+        <a class="corner-link" href="https://github.com/claudiozer" aria-label="Ver proyectos en GitHub">↗</a>
+      </article>
+
+      <article id="galeria" class="feature-card with-art">
+        <div><h2><span>▣</span> <span data-i18n="cards.photography">Fotografía</span></h2><p data-i18n="cards.photographyText">Vivo para capturar lo que siento. Cada foto es un recuerdo que no quiero olvidar.</p><a href="#redes" data-i18n="cards.viewGallery">Ver galería →</a></div>
+        <img src="assets/photo-retina.webp" alt="Ilustración tomando una fotografía">
+      </article>
+
+      <article class="feature-card with-art">
+        <div><h2><span>♫</span> <span data-i18n="cards.music">Música</span></h2><p data-i18n="cards.musicText">La música me acompaña, me guía y me empuja a seguir creando.</p><a href="#redes" data-i18n="cards.topMusic">Mi top musical →</a></div>
+        <img src="assets/music-retina.webp" alt="Ilustración escuchando música">
+      </article>
+
+      <article class="feature-card with-art">
+        <div><h2><span>8</span> CrossFit</h2><p data-i18n="cards.crossfitText">No es solo entrenar el cuerpo, es entrenar la mente para no rendirse.</p><a href="#redes" data-i18n="cards.viewRoutine">Ver rutina →</a></div>
+        <img src="assets/crossfit-retina.webp" alt="Ilustración levantando una barra">
+      </article>
+
+      <article class="feature-card wide tech-card">
+        <div><h2><span>&lt;/&gt;</span> <span data-i18n="cards.techAnime">Tecnología y anime</span></h2><p data-i18n="cards.techAnimeText">Creo soluciones que conectan. El anime me enseña, me inspira y me motiva a soñar en grande.</p><a href="https://github.com/claudiozer" data-i18n="cards.tools">Herramientas que uso →</a></div>
+        <div class="line-art" aria-hidden="true">未来 · 創造 · 技術</div>
+      </article>
+
+      <article class="feature-card wide with-art">
+        <div><h2><span>✈</span> <span data-i18n="cards.travelCoffee">Viajes y café</span></h2><p data-i18n="cards.travelCoffeeText">Vivo en Joinville, Brasil. Viajar me abre la mente, y el café hace que todo fluya.</p><a href="#redes" data-i18n="cards.favoritePlaces">Ver lugares favoritos →</a></div>
+        <img src="assets/travel-retina.webp" alt="Ilustración de Claudio tomando café">
+      </article>
+    </section>
+
+    <p class="closing section-shell" data-i18n="closing">❝ &nbsp; La creatividad es mi forma de vivir y de conectar con lo que amo. &nbsp; ♡</p>
+  </main>
+
+  <footer id="redes" class="site-footer section-shell">
+    <a href="#" aria-label="Instagram de Claudio"><b>◎</b><span>Instagram<small>@claudiozer</small></span></a>
+    <a href="#" aria-label="TikTok de Claudio"><b>♪</b><span>TikTok<small>@claudiozer</small></span></a>
+    <a href="#" aria-label="YouTube de Claudio"><b>▻</b><span>YouTube<small>/claudiozer</small></span></a>
+    <a href="#" aria-label="Behance de Claudio"><b>Bē</b><span>Behance<small>/claudiozer</small></span></a>
+    <a href="https://github.com/claudiozer" aria-label="GitHub de Claudio"><b>◉</b><span>GitHub<small>/claudiozer</small></span></a>
+  </footer>
+</body>
+</html>
