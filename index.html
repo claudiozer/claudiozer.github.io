@@ -62,7 +62,16 @@
       <aside class="profile-card">
         <h2 data-i18n="profile.title">Perfil</h2>
         <ul>
-          <li><span>♫</span> <span class="profile-value" data-i18n="profile.nationality">Argentino</span> <b>🇦🇷</b></li>
+          <li>
+            <span>♫</span>
+            <span class="profile-value" data-i18n="profile.nationality">Argentino</span>
+            <svg class="argentina-flag" viewBox="0 0 36 24" role="img" aria-label="Bandera de Argentina">
+              <rect width="36" height="8" fill="#74acdf"/>
+              <rect y="8" width="36" height="8" fill="#fff"/>
+              <rect y="16" width="36" height="8" fill="#74acdf"/>
+              <circle cx="18" cy="12" r="2.2" fill="#f6b40e"/>
+            </svg>
+          </li>
           <li><span>▥</span> 178 cm</li>
           <li><span>▣</span> 74 kg</li>
           <li><span>◇</span> <span class="profile-value" data-i18n="profile.sports">CrossFit y Hyrox</span></li>
@@ -98,15 +107,18 @@
         <img src="assets/camera-kid-retina.webp" alt="Ilustración con cámara y auriculares">
       </article>
 
-      <article id="proyectos" class="feature-card">
-        <h2><span>▣</span> Product Owner</h2>
-        <p data-i18n="cards.poText">Lidero la visión del producto, conecto equipos y entrego valor real a las personas.</p>
-        <div class="tags"><span data-i18n="cards.productManagement">Gestión de Producto</span><span data-i18n="cards.analysis">Análisis</span><span data-i18n="cards.agility">Agilidad</span><span data-i18n="cards.leadership">Liderazgo</span></div>
-        <a class="corner-link" href="https://github.com/claudiozer" aria-label="Ver proyectos en GitHub">↗</a>
+      <article id="proyectos" class="feature-card product-owner-card">
+        <div class="product-owner-copy">
+          <h2><span>▣</span> Product Owner</h2>
+          <p data-i18n="cards.poText">Lidero la visión del producto, conecto equipos y entrego valor real a las personas.</p>
+          <div class="tags"><span data-i18n="cards.productManagement">Gestión de Producto</span><span data-i18n="cards.analysis">Análisis</span><span data-i18n="cards.agility">Agilidad</span><span data-i18n="cards.leadership">Liderazgo</span></div>
+        </div>
+        <img class="product-owner-art" src="assets/product-owner-transparent.webp" alt="" aria-hidden="true">
+        <a class="corner-link" href="https://www.linkedin.com/in/claudioalderete" target="_blank" rel="noopener noreferrer" aria-label="Ver perfil profesional de Claudio en LinkedIn">↗</a>
       </article>
 
       <article id="galeria" class="feature-card with-art">
-        <div><h2><span>▣</span> <span data-i18n="cards.photography">Fotografía</span></h2><p data-i18n="cards.photographyText">Vivo para capturar lo que siento. Cada foto es un recuerdo que no quiero olvidar.</p><a href="#redes" data-i18n="cards.viewGallery">Ver galería →</a></div>
+        <div><h2><span>▣</span> <span data-i18n="cards.photography">Fotografía</span></h2><p data-i18n="cards.photographyText">Vivo para capturar lo que siento. Cada foto es un recuerdo que no quiero olvidar.</p><a href="https://www.instagram.com/fotosdeclaudio" target="_blank" rel="noopener noreferrer" data-i18n="cards.viewGallery">Ver galería →</a></div>
         <img src="assets/photo-retina.webp" alt="Ilustración tomando una fotografía">
       </article>
 
@@ -115,7 +127,7 @@
         <img src="assets/music-retina.webp" alt="Ilustración escuchando música">
       </article>
 
-      <article class="feature-card with-art">
+      <article class="feature-card with-art sport-card">
         <div><h2><span>◇</span> <span data-i18n="cards.crossfitHyrox">CrossFit y Hyrox</span></h2><p data-i18n="cards.crossfitText">No es solo entrenar el cuerpo, es entrenar la mente para no rendirse.</p><a href="#redes" data-i18n="cards.viewRoutine">Ver rutina →</a></div>
         <img src="assets/crossfit-retina.webp" alt="Ilustración levantando una barra">
       </article>
@@ -135,11 +147,12 @@
   </main>
 
   <footer id="redes" class="site-footer section-shell">
-    <a href="#" aria-label="Instagram de Claudio"><b>◎</b><span>Instagram<small>@claudiozer</small></span></a>
-    <a href="#" aria-label="TikTok de Claudio"><b>♪</b><span>TikTok<small>@claudiozer</small></span></a>
-    <a href="#" aria-label="YouTube de Claudio"><b>▻</b><span>YouTube<small>/claudiozer</small></span></a>
-    <a href="#" aria-label="Behance de Claudio"><b>Bē</b><span>Behance<small>/claudiozer</small></span></a>
-    <a href="https://github.com/claudiozer" aria-label="GitHub de Claudio"><b>◉</b><span>GitHub<small>/claudiozer</small></span></a>
+    <a href="https://www.instagram.com/fotosdeclaudio" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Claudio"><b>◎</b><span>Instagram<small>@fotosdeclaudio</small></span></a>
+    <a href="https://www.tiktok.com/@fotosdeclaudio" target="_blank" rel="noopener noreferrer" aria-label="TikTok de Claudio"><b>♪</b><span>TikTok<small>@fotosdeclaudio</small></span></a>
+    <a href="https://youtube.com/@claudiozer" target="_blank" rel="noopener noreferrer" aria-label="YouTube de Claudio"><b>▻</b><span>YouTube<small>@claudiozer</small></span></a>
+    <a href="https://www.linkedin.com/in/claudioalderete" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Claudio"><b>in</b><span>LinkedIn<small>/in/claudioalderete</small></span></a>
+    <a href="https://giphy.com/channel/claudiorafaelalderete" target="_blank" rel="noopener noreferrer" aria-label="GIF y stickers de Claudio en Giphy"><b>G</b><span>Giphy<small>GIF y stickers</small></span></a>
+    <a href="https://github.com/claudiozer" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Claudio"><b>◉</b><span>GitHub<small>/claudiozer</small></span></a>
   </footer>
 </body>
 </html>

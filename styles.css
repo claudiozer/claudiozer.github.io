@@ -113,6 +113,7 @@ blockquote::before { content: "❝"; margin-right: 14px; font-size: 2rem; line-h
 .profile-card li span { width: 18px; color: var(--accent); font-size: 1.15rem; }
 .profile-card li .profile-value { width: auto; color: #c6bdc8; font-size: inherit; }
 .profile-card li b { margin-left: auto; font-weight: 400; }
+.argentina-flag { width: 27px; height: 18px; margin-left: auto; border-radius: 2px; box-shadow: 0 0 0 1px rgba(255,255,255,.2); }
 .profile-focus { padding-top: 11px; font-size: .83rem; color: #a49ba8; }
 .profile-focus strong { color: var(--accent); font-weight: 400; }
 .profile-focus p { margin: 4px 0; }
@@ -137,19 +138,24 @@ blockquote::before { content: "❝"; margin-right: 14px; font-size: 2rem; line-h
 .feature-card.with-art { display: flex; }
 .feature-card.with-art > div { width: 60%; position: relative; z-index: 2; }
 .feature-card.with-art > img { position: absolute; right: 2px; bottom: 0; width: 48%; height: 92%; object-fit: contain; object-position: right bottom; mix-blend-mode: lighten; mask-image: linear-gradient(90deg, transparent, #000 18%, #000 92%, transparent); }
+.feature-card.sport-card > img { right: 8px; bottom: 12px; width: 45%; height: 82%; }
 .compact-list { margin: 0; padding: 0; list-style: none; color: #b2a9b7; font-size: .79rem; line-height: 1.65; }
 .compact-list + * { clear: both; }
 .heart { display: block; margin-top: 22px; color: var(--accent); font-size: 1.8rem; line-height: 1; }
 .tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 14px; }
 .tags span { padding: 3px 12px; border: 1px solid rgba(157, 93, 221, .25); border-radius: 7px; color: #9c92a3; font-size: .72rem; }
 .corner-link { position: absolute; right: 22px; bottom: 16px; font-size: 1.5rem !important; }
+.product-owner-card { isolation: isolate; }
+.product-owner-copy { width: 60%; position: relative; z-index: 2; }
+.product-owner-art { position: absolute; right: 8px; bottom: 8px; width: 39%; height: 88%; object-fit: contain; object-position: right bottom; z-index: 1; }
+.product-owner-card .corner-link { z-index: 3; }
 .tech-card { display: flex; align-items: center; }
 .tech-card > div:first-child { width: 48%; }
 .anime-art { width: 51%; height: 125px; margin-left: auto; object-fit: contain; object-position: right center; mix-blend-mode: lighten; mask-image: linear-gradient(90deg, transparent, #000 16%); }
 
 .closing { margin-top: 12px; margin-bottom: 0; padding: 7px 20px; border-radius: 11px; color: #a89eac; text-align: center; font-size: .87rem; font-style: italic; }
 .closing::first-letter { color: var(--accent); font-size: 1.4rem; }
-.site-footer { margin-top: 4px; margin-bottom: 18px; padding: 9px 34px; border-radius: 11px; display: flex; justify-content: space-between; align-items: center; }
+.site-footer { margin-top: 4px; margin-bottom: 18px; padding: 9px 25px; border-radius: 11px; display: grid; grid-template-columns: repeat(6, auto); justify-content: space-between; align-items: center; gap: 14px; }
 .site-footer a { display: flex; align-items: center; gap: 11px; color: #a79daa; font-size: .74rem; }
 .site-footer b { color: var(--accent); font-size: 1.8rem; font-weight: 400; }
 .site-footer small { display: block; color: #8f8695; }
@@ -191,7 +197,7 @@ blockquote::before { content: "❝"; margin-right: 14px; font-size: 2rem; line-h
   .cards { grid-template-columns: 1fr; }
   .feature-card, .feature-card.wide { grid-column: auto; min-height: 210px; }
   .feature-card.wide { min-height: 165px; }
-  .site-footer { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+  .site-footer { grid-template-columns: repeat(2, 1fr); gap: 15px; }
 }
 
 @media (max-width: 430px) {
@@ -206,7 +212,12 @@ blockquote::before { content: "❝"; margin-right: 14px; font-size: 2rem; line-h
   .feature-card { padding: 19px; }
   .feature-card.with-art > div { width: 64%; }
   .feature-card.with-art > img { right: 6px; bottom: 4px; width: 44%; height: 76%; object-fit: contain; object-position: right bottom; }
+  .feature-card.sport-card > img { right: 10px; bottom: 14px; width: 40%; height: 68%; }
   .feature-card.with-art h2 { font-size: 1.14rem; }
+  .product-owner-card { min-height: 250px; }
+  .product-owner-copy { width: 61%; }
+  .product-owner-art { right: 6px; bottom: 12px; width: 39%; height: 66%; }
+  .product-owner-card .corner-link { right: 18px; bottom: 12px; }
   .tech-card { min-height: 230px !important; align-items: stretch; }
   .tech-card > div:first-child { width: 58%; position: relative; z-index: 2; }
   .anime-art { position: absolute; right: 3px; bottom: 4px; width: 48%; height: 70%; object-position: right bottom; }
