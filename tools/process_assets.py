@@ -11,10 +11,10 @@ ASSET_RULES = {
     "hero.png": {"crop": (28, 0, 350, 500), "scale": 4},
     "profile-kid.png": {"crop": (8, 0, 182, 180), "scale": 4},
     "motivation.png": {"crop": (5, 0, 160, 215), "scale": 4},
-    "camera-kid.png": {"crop": (5, 0, 165, 190), "scale": 4},
+    "camera-kid.png": {"crop": (28, 20, 168, 190), "scale": 5},
     "photo.png": {"crop": (5, 0, 160, 185), "scale": 4},
     "music.png": {"crop": (5, 0, 160, 185), "scale": 4},
-    "crossfit.png": {"crop": (3, 0, 176, 185), "scale": 4},
+    "crossfit.png": {"crop": (50, 0, 180, 185), "scale": 5},
     "travel.png": {"crop": (8, 0, 212, 145), "scale": 4},
 }
 

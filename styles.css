@@ -89,7 +89,7 @@ button { font: inherit; }
 .hello { margin: 0 0 -20px 55px; color: #fff; font: 500 3rem/1 Caveat, cursive; transform: rotate(-3deg); }
 .hero h1 { margin: 0 0 14px; font: 600 clamp(4.4rem, 7vw, 6.7rem)/.78 Caveat, cursive; letter-spacing: -4px; transform: rotate(-3deg); text-shadow: 0 7px 0 rgba(0,0,0,.16); }
 .hero h1 span { display: block; color: #f5f0ee; }
-.hero h1 { color: #7e32c9; }
+.hero h1 .surname { color: #7e32c9; white-space: nowrap; }
 .hero-copy > p:not(.hello) { max-width: 495px; margin: 4px 0; color: var(--muted); font-size: 1rem; }
 .hero-copy .lead strong { color: var(--accent-soft); font-size: 1.13rem; font-weight: 400; }
 blockquote { max-width: 470px; margin: 12px 0 0; padding: 12px 18px; border: 1px solid var(--accent); border-radius: 12px; color: #b16fe9; font-style: italic; background: linear-gradient(90deg, rgba(111, 43, 177, .12), transparent); }
@@ -139,13 +139,13 @@ blockquote::before { content: "❝"; margin-right: 14px; font-size: 2rem; line-h
 .feature-card.with-art > img { position: absolute; right: 2px; bottom: 0; width: 48%; height: 92%; object-fit: contain; object-position: right bottom; mix-blend-mode: lighten; mask-image: linear-gradient(90deg, transparent, #000 18%, #000 92%, transparent); }
 .compact-list { margin: 0; padding: 0; list-style: none; color: #b2a9b7; font-size: .79rem; line-height: 1.65; }
 .compact-list + * { clear: both; }
-.heart { position: absolute; left: 0; bottom: -45px; color: var(--accent); font-size: 1.8rem; }
+.heart { display: block; margin-top: 22px; color: var(--accent); font-size: 1.8rem; line-height: 1; }
 .tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 14px; }
 .tags span { padding: 3px 12px; border: 1px solid rgba(157, 93, 221, .25); border-radius: 7px; color: #9c92a3; font-size: .72rem; }
 .corner-link { position: absolute; right: 22px; bottom: 16px; font-size: 1.5rem !important; }
 .tech-card { display: flex; align-items: center; }
 .tech-card > div:first-child { width: 48%; }
-.line-art { flex: 1; color: rgba(156, 76, 230, .28); font: 600 1.35rem Caveat, cursive; letter-spacing: .2em; text-align: center; text-shadow: 0 0 18px #6525a3; }
+.anime-art { width: 51%; height: 125px; margin-left: auto; object-fit: contain; object-position: right center; mix-blend-mode: lighten; mask-image: linear-gradient(90deg, transparent, #000 16%); }
 
 .closing { margin-top: 12px; margin-bottom: 0; padding: 7px 20px; border-radius: 11px; color: #a89eac; text-align: center; font-size: .87rem; font-style: italic; }
 .closing::first-letter { color: var(--accent); font-size: 1.4rem; }
@@ -179,7 +179,7 @@ blockquote::before { content: "❝"; margin-right: 14px; font-size: 2rem; line-h
   .hero { display: flex; flex-direction: column; }
   .hero-copy { order: 2; width: 100%; margin-top: -30px; }
   .hello { margin-left: 18px; font-size: 2.2rem; }
-  .hero h1 { font-size: clamp(4rem, 21vw, 5.6rem); letter-spacing: -2px; }
+  .hero h1 { font-size: clamp(3.5rem, 15vw, 4.6rem); line-height: .86; letter-spacing: -2px; }
   .hero-copy > p:not(.hello) { font-size: .92rem; }
   .hero-portrait { order: 1; width: min(100%, 430px); height: 430px; margin-top: -15px; align-self: center; }
   .hero-portrait img { width: 100%; height: 100%; object-fit: contain; }
@@ -197,7 +197,7 @@ blockquote::before { content: "❝"; margin-right: 14px; font-size: 2rem; line-h
 @media (max-width: 430px) {
   .hero-portrait { height: 365px; }
   .hero-copy { margin-top: -8px; }
-  .hero h1 { font-size: 4.3rem; }
+  .hero h1 { font-size: clamp(3.2rem, 13.8vw, 3.65rem); transform: none; }
   .profile-card { padding-right: 35%; }
   .profile-card > img { right: -18px; width: 46%; }
   .essence-list { grid-template-columns: 1fr; padding-inline: 16px; }
@@ -207,6 +207,9 @@ blockquote::before { content: "❝"; margin-right: 14px; font-size: 2rem; line-h
   .feature-card.with-art > div { width: 64%; }
   .feature-card.with-art > img { right: 6px; bottom: 4px; width: 44%; height: 76%; object-fit: contain; object-position: right bottom; }
   .feature-card.with-art h2 { font-size: 1.14rem; }
+  .tech-card { min-height: 230px !important; align-items: stretch; }
+  .tech-card > div:first-child { width: 58%; position: relative; z-index: 2; }
+  .anime-art { position: absolute; right: 3px; bottom: 4px; width: 48%; height: 70%; object-position: right bottom; }
   .site-footer { grid-template-columns: 1fr; padding-left: 28px; }
 }
 
